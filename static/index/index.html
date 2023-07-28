@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="/static/index/index.css">
+    <!--<link rel="stylesheet" type="text/css" href="/static/index/index.css">-->
 </head>
 <body>
+    <div id="loader"></div>
+    <div id="f"></div>
     <header>
         <div class="menu">
           <div class="menu_logo">
             <img src="/static/index/img/folderIcon.png" id="folderIcon" />
             <div id="titleSiteFolderIcon">Folder Size Site</div>
+          </div>
+
+          <div class="er">
+            <div id="errorInTime"></div>
+          </div>
+          
+          <div class="menu_timeLoad">
+            <span>Время выполнения: </span>
+            <div id="timeLoad"></div>
+            <span>сек</span>
           </div>
         </div>
     </header>
@@ -45,6 +57,7 @@
 
     <div class="directories"></div>
 
-    <script src="/static/index/index.js"></script>
+    <script type="module" src="/static/out/main.js"></script>
+
 </body>
 </html>

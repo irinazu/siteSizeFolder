@@ -11,7 +11,6 @@ import (
 
 func main() {
 
-	http.HandleFunc("/", handler.GetMainPage)
 	http.HandleFunc("/public", handler.GetPublicPage)
 
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./static/"))))

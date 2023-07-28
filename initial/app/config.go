@@ -8,7 +8,8 @@ import (
 )
 
 type Config struct {
-	Port string `yaml:"port"`
+	Port   string `yaml:"port"`
+	IpStat string `yaml:"ipStat"`
 }
 
 func CreateConfig() *Config {
